@@ -1,0 +1,85 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.gallery-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.25em;
+  color: #2c3e50;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-bottom: 2em;
+  color: #555;
+}
+
+.hobby-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.hobby {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hobby:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.hobby img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: filter 0.3s ease;
+}
+
+.hobby img:hover {
+  filter: brightness(85%);
+}
+
+.hobby h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.hobby p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.hobby a {
+  text-decoration: none;
+  color: #2980b9;
+  font-weight: 600;
+}
+
+.hobby a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .hobby img {
+    height: 140px;
+  }
+}
